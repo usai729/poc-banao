@@ -22,10 +22,13 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/scrape", async (req, res) => {
-	const { linkedinUrl } = req.query;
+	const { data } = req.body;
 
 	try {
-		console.log(linkedinUrl);
+		const newRec = Profile.build(data);
+		await newRec.save();
+
+		res.status(200);
 	} catch (e) {
 		console.log(e);
 

@@ -1,10 +1,19 @@
 {
 	"manifest_version": 3,
-	"name": "Linkedin Profile Scrapper",
+	"name": "LinkedIn Scraper",
 	"version": "1.0",
-	"description": "Scrapes Linkedin Profiles",
-	"permissions": ["activeTab"],
+	"permissions": ["tabs", "activeTab"],
+	"background": {
+		"service_worker": "background.js"
+	},
 	"action": {
 		"default_popup": "popup.html"
-	}
+	},
+	"host_permissions": ["https://www.linkedin.com/*"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	]
 }
