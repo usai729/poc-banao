@@ -1,0 +1,9 @@
+button {
+	padding: 0.25rem;
+	cursor: pointer;
+	border: none;
+	background: linear-gradient(60deg, pink, purple);
+	width: 100px;
+	font-weight: 600;
+	color: white;
+}
