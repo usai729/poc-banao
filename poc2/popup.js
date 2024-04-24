@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			{ active: true, currentWindow: true },
 			function (tabs) {
 				const currentTab = tabs[0];
+
 				const title = currentTab.title;
 				titleDisplay.textContent = title;
 			},
