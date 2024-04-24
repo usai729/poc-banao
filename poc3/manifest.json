@@ -1,0 +1,10 @@
+{
+	"manifest_version": 3,
+	"name": "Linkedin Profile Scrapper",
+	"version": "1.0",
+	"description": "Scrapes Linkedin Profiles",
+	"permissions": ["activeTab"],
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
