@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			function (tabs) {
 				const currentTab = tabs[0];
 
-				const title = currentTab.title;
-				titleDisplay.textContent = title;
+				titleDisplay.innerHTML = currentTab.title;
 			},
 		);
 	});
