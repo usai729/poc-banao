@@ -2,21 +2,21 @@
 	"development": {
 		"username": "root",
 		"password": "rootmysql@1#",
-		"database": "poc1",
+		"database": "poc3",
 		"host": "localhost",
 		"dialect": "mysql"
 	},
 	"test": {
 		"username": "root",
 		"password": "rootmysql@1#",
-		"database": "poc1",
+		"database": "poc3",
 		"host": "localhost",
 		"dialect": "mysql"
 	},
 	"production": {
 		"username": "root",
 		"password": "rootmysql@1#",
-		"database": "poc1",
+		"database": "poc3",
 		"host": "localhost",
 		"dialect": "mysql"
 	}

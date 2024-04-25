@@ -1,8 +1,8 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
-const Company = sequelize.define(
-	"Company",
+const Profile = sequelize.define(
+	"Profile",
 	{
 		id: {
 			type: DataTypes.INTEGER,
@@ -13,21 +13,14 @@ const Company = sequelize.define(
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		country: {
-			type: DataTypes.STRING,
-			allowNull: false,
-		},
-		website: {
-			type: DataTypes.STRING,
-		},
-		email: {
+		url: {
 			type: DataTypes.STRING,
 			allowNull: false,
 			unique: true,
 		},
-		verified: {
-			type: DataTypes.BOOLEAN,
-			defaultValue: false,
+
+		bio: {
+			type: DataTypes.STRING,
 		},
 	},
 	{
@@ -35,4 +28,4 @@ const Company = sequelize.define(
 	},
 );
 
-module.exports = Company;
+module.exports = Profile;
