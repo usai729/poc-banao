@@ -18,22 +18,9 @@ const Profile = sequelize.define(
 			allowNull: false,
 			unique: true,
 		},
-		about: {
-			type: DataTypes.STRING,
-		},
+
 		bio: {
 			type: DataTypes.STRING,
-		},
-		location: {
-			type: DataTypes.STRING,
-		},
-		followerCount: {
-			type: DataTypes.INTEGER,
-			defaultValue: 0,
-		},
-		connectionCount: {
-			type: DataTypes.INTEGER,
-			defaultValue: 0,
 		},
 	},
 	{
